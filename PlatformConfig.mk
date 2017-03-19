@@ -40,7 +40,9 @@ BOARD_RAMDISK_OFFSET     := 0x02000000
 BOARD_KERNEL_CMDLINE += androidboot.bootdevice=7824900.sdhci
 BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
 
-TARGET_RECOVERY_FSTAB = $(PLATFORM_COMMON_PATH)/rootdir/fstab.kanuti
+# TWRP Build Flags
+TARGET_RECOVERY_FSTAB = $(PLATFORM_COMMON_PATH)/rootdir/twrp.fstab
+TW_THEME := portrait_hdpi
 
 # Wi-Fi definitions for Qualcomm solution
 BOARD_HAS_QCOM_WLAN := true
