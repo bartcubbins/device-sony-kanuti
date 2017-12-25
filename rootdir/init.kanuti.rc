@@ -21,9 +21,6 @@ on boot
     # Bluetooth
     chown system system /sys/devices/soc.0/a000000.qcom,wcnss-wlan/wcnss_mac_addr
 
-    # WCNSS enable
-    write /dev/wcnss_wlan 1
-
     # Update foreground cpuset now that processors are up
     write /dev/cpuset/foreground/cpus 0-7
     write /dev/cpuset/foreground/boost/cpus 4-7
