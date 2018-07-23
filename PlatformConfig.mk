@@ -46,7 +46,7 @@ BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
 # Serial console
 #BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0x7af0000 androidboot.console=msm_serial_dm,0x7af0000
 
-TARGET_RECOVERY_FSTAB = $(PLATFORM_COMMON_PATH)/rootdir/vendor/etc/fstab.kanuti
+TARGET_RECOVERY_FSTAB ?= $(PLATFORM_COMMON_PATH)/rootdir/vendor/etc/fstab.kanuti
 
 # Wi-Fi definitions for Qualcomm solution
 BOARD_HAS_QCOM_WLAN := true
